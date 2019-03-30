@@ -7,7 +7,7 @@ import org.apache.storm.tuple.Fields;
 import org.apache.storm.tuple.Tuple;
 import twitter4j.Status;
 
-public class Bolt extends BaseBasicBolt {
+public class Bolt_Print_Tweets extends BaseBasicBolt {
 
     public void execute(Tuple tuple, BasicOutputCollector basicOutputCollector) {
         Status tweetsFromBolt = (Status) tuple.getValueByField("tweets");

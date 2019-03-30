@@ -14,7 +14,7 @@ import twitter4j.conf.ConfigurationBuilder;
 import java.util.Map;
 import java.util.concurrent.LinkedBlockingQueue;
 
-public class Spout extends BaseRichSpout
+public class Spout_TwitterStream_Tweets extends BaseRichSpout
 {
 
     SpoutOutputCollector _collector;
