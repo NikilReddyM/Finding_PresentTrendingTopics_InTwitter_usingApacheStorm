@@ -10,7 +10,7 @@ public class Storm_Topology
 
         TopologyBuilder builder = new TopologyBuilder();
         builder.setSpout("twitter-spout", new Spout_TwitterStream_Tweets());
-        builder.setBolt("twitter-bolt",new Bolt_Print_Tweets()).shuffleGrouping("twitter-spout");
+        builder.setBolt("twitter-bolt",new Bolt_SaveTweets_File()).shuffleGrouping("twitter-spout");
 
 
 

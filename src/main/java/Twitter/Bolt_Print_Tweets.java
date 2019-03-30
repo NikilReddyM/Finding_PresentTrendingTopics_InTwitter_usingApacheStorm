@@ -10,8 +10,8 @@ import twitter4j.Status;
 public class Bolt_Print_Tweets extends BaseBasicBolt {
 
     public void execute(Tuple tuple, BasicOutputCollector basicOutputCollector) {
-        Status tweetsFromBolt = (Status) tuple.getValueByField("tweets");
-        System.out.println("Err1:"+tweetsFromBolt.getText());
+        Status tweet = (Status) tuple.getValueByField("tweets");
+        System.out.println("tweet:  "+tweet.getText());
     }
 
 
